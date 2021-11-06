@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Login, Register } from "../components";
 import { setAccessToken } from "../utilities/CommonUtilities";
 import Services from "../services";
+import MainScreen from "./MainScreen";
 
 const { API } = Services;
 export default function Home() {
@@ -65,7 +66,13 @@ export default function Home() {
           />
         )
       ) : (
-        <div>hello Main Screen</div>
+        <MainScreen
+          setUserData={setUserData}
+          favorites={favorites}
+          setFavorites={setFavorites}
+          selectedUnit={selectedUnit}
+          setSelectedUnit={setSelectedUnit}
+        />
       )}
     </>
   );

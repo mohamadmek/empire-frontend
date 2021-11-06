@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build": "next build && next export"
   },
   "dependencies": {
     "axios": "^0.24.0",

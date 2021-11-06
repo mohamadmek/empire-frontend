@@ -1,0 +1,31 @@
+.sidebar {
+  background-image: url("/images/cloud2.png");
+  background-repeat: no-repeat;
+  animation: slide 8s ease-in-out infinite;
+}
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.windRotate {
+  animation: windRotate 8s ease-in-out infinite;
+}
+@keyframes windRotate {
+  0% {
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    /* transform: rotate(0deg); */
+  }
+}
