@@ -3,10 +3,10 @@ import { statuses, returnUnitType } from "../utilities/CommonUtilities";
 
 const Highlight = ({ title, number, unit, icon, status }) => {
   return (
-    <div className="bg-purple1f223a w-1/3 p-4 text-white h-64 flex flex-col justify-between shadow-lg rounded-lg mr-3">
+    <div className="bg-purple1f223a  mb-2 sm:w-1/3 p-4 text-white h-64 flex flex-col justify-between shadow-lg rounded-lg mr-3">
       <div className="font-bold">{title}</div>
       <div className="flex items-center">
-        <div className="mr-2 text-6xl">{number}</div>
+        <div className="mr-2 md:text-4xl sm:text-2xl">{number}</div>
         <div className="text-2xl">{unit}</div>
       </div>
       <div className="flex items-center">

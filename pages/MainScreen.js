@@ -111,8 +111,8 @@ const MainScreen = ({
   };
 
   return (
-    <div className="flex h-full w-full">
-      <div className="w-1/3 bg-purple1f223a h-screen sidebar p-6">
+    <div className="h-full w-full sm:flex-col md:flex md:flex-row lg:flex-row">
+      <div className=" bg-purple1f223a md:1/3 sm:h-screen sidebar p-6">
         <div className="flex justify-between align-middle">
           <Search
             onSubmitSearchClicked={onSubmitSearchClicked}
@@ -201,10 +201,10 @@ const MainScreen = ({
           </>
         )}
       </div>
-      <div className="w-2/3 bg-purple110e1d h-screen p-10">
+      <div className="w-full sm:h-screen h-full bg-purple110e1d  p-10">
         <button
           onClick={() => handleLogout()}
-          className="absolute top-5 right-10 text-white bg-purple1f223a p-3 rounded-lg"
+          className="absolute md:top-5 right-10 text-white bg-purple1f223a p-3 rounded-lg sm:top-20 sm:bg-purple110e1d"
         >
           Logout
         </button>
@@ -221,7 +221,7 @@ const MainScreen = ({
             />
           ))}
         </div>
-        <div className="flex justify-between">
+        <div className="flex sm:flex sm:flex-row flex-col">
           {weatherList.map((weatherData, index) => {
             if (index > 0) {
               return (
@@ -247,7 +247,7 @@ const MainScreen = ({
             <div className="text-white text-3xl mt-4 mb-4">
               Today’s Hightlights
             </div>
-            <div className="flex justify-between">
+            <div className="justify-between sm:flex">
               <Highlight
                 title="Wind status"
                 number={weatherList[0].wind.speed}

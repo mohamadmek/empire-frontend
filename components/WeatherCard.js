@@ -8,7 +8,7 @@ import {
 const WeatherCard = ({ selectedUnit, weatherData }) => {
   const { date, weather, main } = weatherData;
   return (
-    <div className="bg-purple1f223a h-56 w-3/12 mr-4 shadow-lg cursor-pointer text-white flex flex-col items-center py-7 justify-center rounded-lg">
+    <div className=" bg-purple1f223a h-56 w-3/12 sm:w-3/12 mr-4 shadow-lg cursor-pointer text-white flex flex-col items-center py-7 justify-center rounded-lg xsm:w-full xsm:mb-2">
       <div>{date}</div>
       <div className="py-6 text-5xl">{statuses[weather[0].main]}</div>
       <div>

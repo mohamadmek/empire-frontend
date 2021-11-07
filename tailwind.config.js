@@ -8,6 +8,10 @@ module.exports = {
         purple1f223a: "#1f223a",
         purple110e1d: "#110e1d",
       },
+      screens: {
+        xsm: "400px",
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   variants: {
